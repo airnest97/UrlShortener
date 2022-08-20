@@ -14,8 +14,8 @@
     <name>urlShortener</name>
     <description>A demo url shortener project</description>
     <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>1.18</maven.compiler.source>
+        <maven.compiler.target>1.18</maven.compiler.target>
 
     </properties>
     <dependencies>
