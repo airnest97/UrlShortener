@@ -60,7 +60,7 @@ public class UrlServicesImpl implements UrlServices {
     public String updateShortLink(String shortenedUrl, String customLink) throws UrlException {
         Optional<Url> foundUrl = Optional.ofNullable(urlRepository.findUrlByShortenedUrl(shortenedUrl));
 
-        if (foundUrl.isEmpty()) {
+        if (!foundUrl.isPresent()) {
             throw new UrlException("url");
         }
 
