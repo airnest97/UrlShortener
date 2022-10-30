@@ -61,7 +61,7 @@ public class UrlServicesImpl implements UrlServices {
         Optional<Url> foundUrl = Optional.ofNullable(urlRepository.findUrlByShortenedUrl(shortenedUrl));
 
         if (!foundUrl.isPresent()) {
-            throw new UrlException("url");
+            throw new UrlException("url not present");
         }
 
         foundUrl.get().setShortenedUrl(customLink);
